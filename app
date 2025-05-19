@@ -20,35 +20,35 @@
     //Enumeraciones
 
     
-    enum fuerzaFlash{
-      min=5
+  
+
+    enum fuerza{
+      flash=5,
+      superman=100,
+      batman=1,
+      Acuaman=0
+
     }
-    enum fuerzaSuperman{
-      max=100
-    }
-    enum fuerzaBatman{
-      min=1
-    }
-    enum fuerzaAcuaman{
-      min
-    }
+
+    
 
   
     // Retorno de funciones
-    function activar_batiseñal():void{
-      return ;
+    function activar_batiseñal():string{
+      return 'Activar';
     }
-    const respuesta =activar_batiseñal();
+    
   
     function pedir_ayuda():void{
-      return ;
+      console.log('Ayuda!!!') ;
     }
-    const respuesta2 =pedir_ayuda();
+  
   
     // Aserciones de Tipo
     const poder: any = '100';
-    const largoDelPoder:number = poder.length;
+    const largoDelPoder:number = (poder as string).length;
     console.log( largoDelPoder );
   
   
   })()
+  
