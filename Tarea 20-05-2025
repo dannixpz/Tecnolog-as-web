@@ -1,0 +1,32 @@
+(()=>{
+
+
+ const addTwoNumbers = (a:number, b:number) => a + b;
+
+ 
+  console.log(addTwoNumbers(2, 4)===6);//el .toEqual() no es valido usarse despues del console.log() porque este no devuelve ningun valor.
+  console.log(addTwoNumbers(10, 10)===20);
+
+
+})()
+
+//-------------------------------------------segundo Codigo--------------------------------------------------------------------------------
+
+(()=>{
+    
+//use interface para definir la estructura que tiene el objeto, indicando las propiedades que debe de tener y tipos 
+    interface Params{
+        first:number,
+        second:number
+    }
+    
+ const addTwoNumbers = (params:Params):number => {
+  return params.first + params.second;
+};
+
+
+  console.log(addTwoNumbers({first: 2,second: 4,}));
+
+  console.log(addTwoNumbers({first: 10,second: 20,}));
+
+})()
