@@ -1,0 +1,107 @@
+(()=>{
+
+    class Manager{
+
+
+        constructor(public name:string, public id:number, public phoneNo:number, public locacion:string){
+
+            this.name=name;
+            this.id=id;
+            this.phoneNo=phoneNo;
+            this.locacion=locacion;
+        }
+        public PurchaseInventory=()=>{};
+        public RecordComplaints=()=>{};
+        public ManageStaff=()=>{};
+
+        }
+
+    class Chef{
+        constructor(public name:string,public id:number, public location:string){
+
+            this.name=name;
+            this.id=id;
+            this.location=location;
+        };
+
+        public takeOrders=()=>{};
+    }
+
+    class Inventory{
+        constructor(public type:string, public status:string){
+
+            this.type=type;
+            this.status=status;
+
+        }
+    }
+
+    class Guest{
+
+        constructor(public name:string, public id:number, public phoneNo:number, public address:string,public roomNo:number){
+
+            this.name=name;
+            this.id=id;
+            this.phoneNo=phoneNo;
+            this.address=address;
+            this.roomNo=roomNo;
+        }
+
+        public checkin=()=>{};
+         public checkout=()=>{};
+          public payBill=()=>{};
+           public orderFood=()=>{};
+            public submitFeedback=()=>{};
+    }
+
+    class Fooditems{
+        constructor(public name:string,public id:number){
+
+            this.name=name;
+            this.id=id;
+        }
+    }
+
+    class Housekeeping{
+        constructor(public name:string,public id:number, public location:string){
+
+            this.name=name;
+            this.id=id;
+            this.location=location;
+
+        }
+    public cleanRoom=()=>{}
+    }
+
+    class Rooms{
+        constructor(public roomNO:number, public location:string){
+            this.roomNO=roomNO;
+            this.location=location;
+
+        }
+    }
+
+    class Bill{
+        constructor(public billNo:number,public guesName:string){
+            this.billNo=billNo;
+            this.guesName=guesName;
+             
+        }
+    }
+
+    class Receptionist {
+        constructor(public id:number, public name:string,public phoneNo:number, public location:string){
+            this.name=name;
+            this.phoneNo=phoneNo;
+            this.id=id;
+            this.location=location;
+
+        }
+
+        public checkRomm=()=>{}
+        public bookRoom=()=>{}
+        public generateBil=()=>{}
+        public acceptcustomer=()=>{}
+    }
+    }
+)
